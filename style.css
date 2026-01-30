@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* fallback background */
+  color: white;
+}
+
+header {header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+header .logo {
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ff0000;
+}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header .logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.hero {
+  height: 100vh;
+  background: url('imageshero-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  cursor: pointer;
+}.hero-content h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin: 10px 0 20px 0;
+  text-shadow: 1px 1px 3px black;
+}
+
+.hero-content button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff0000;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hero-content button:hover {
+  background-color: #cc0000;
+}
+
+.review-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}.review-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.review-card {
+  background: rgba(50, 50, 50, 0.8);
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.review-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+}
+
+.review-card h3 {
+  margin: 10px 0 5px 0;
+}
+
+.review-card p {
+  font-size: 14px;
+}#comments {
+  padding: 20px;
+  background: rgba(30, 30, 30, 0.9);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+.comment-form button {
+  padding: 10px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-card {
+  background: rgba(50, 50, 50, 0.8);
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}.rating {
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 20px;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star.hovered,
+.star.selected {
+  color: gold;
+}footer {
+  padding: 15px;
+  text-align: center;
+  background: rgba(0,0,0,0.9);
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+footer .social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.2s;
+}
+
+footer .social-links a:hover {
+  color: #ff0000;
+}@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 24px;
+  }
+  .hero-content p {
+    font-size: 14px;
+  }
+  .review-card {
+    width: 90%;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  }
